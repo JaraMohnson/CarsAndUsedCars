@@ -1,4 +1,5 @@
 ﻿using CarsAndUsedCars;
+int choice = -1;
 
 // List 
 List<Car> CarList = new List<Car>()
@@ -12,3 +13,24 @@ new Car("Ford", "Bronco Sport", 2023, 68000),
 };
 
 Car.ListCars(CarList);
+
+Console.WriteLine($"Which number car 1-{CarList.Count} would you like?");
+try
+{
+    choice = int.Parse(Console.ReadLine());
+    if(choice < 1 || choice > CarList.Count)
+    {
+        throw new Exception("Please pick a valid number.");
+    }
+}
+catch (FormatException e)
+{
+    Console.WriteLine("Error, that is not a number");
+}
+catch (Exception e)
+{
+    Console.WriteLine(e.Message);
+}
+
+
+

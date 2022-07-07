@@ -48,6 +48,12 @@ namespace CarsAndUsedCars
             }
         }
 
+        public static void Remove(int index, List<Car> List)
+        {
+            
+            List.Remove(List[index]);
+        }
+
 
     }
 }
