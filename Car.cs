@@ -32,11 +32,16 @@ namespace CarsAndUsedCars
             Price = _price;
         }
 
+        
+
         // methods
         public string ToString(Car c)
         {
             return $"{Year} {Make} {Model} is listed at ${Price}";
         }
+
+         public static 
+
 
     }
 }
