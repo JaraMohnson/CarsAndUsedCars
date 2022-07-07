@@ -37,10 +37,17 @@ namespace CarsAndUsedCars
         // methods
         public string ToString(Car c)
         {
-            return $"{Year} {Make} {Model} is listed at ${Price}";
+            
+            return String.Format("{0, 1, 2, 3{Year} {Make} {Model} is listed at ${Price}";
         }
 
-         public static 
+         public static void ListCars (List<Car> list )
+        {
+            for (int i = 0; i < list.Count; i++)
+            {
+                Console.WriteLine(list[i]);
+            }
+        }
 
 
     }
