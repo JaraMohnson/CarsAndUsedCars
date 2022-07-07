@@ -9,7 +9,7 @@ namespace CarsAndUsedCars
     internal class Car
     {
         //properties
-        public string Make { get; set; } 
+        public string Make { get; set; }
         public string Model { get; set; }
         public int Year { get; set; }
         public decimal Price { get; set; }
@@ -32,15 +32,13 @@ namespace CarsAndUsedCars
             Price = _price;
         }
 
-        
-
         // methods
         public override string ToString()
         {
             return String.Format("{0,-10} {1,-15} {2,-10} {3,-10}", Make, Model, Year, Price);
         }
 
-         public static void ListCars (List<Car> list )
+        public static void ListCars(List<Car> list)
         {
             for (int i = 0; i < list.Count; i++)
             {
@@ -50,10 +48,8 @@ namespace CarsAndUsedCars
 
         public static void Remove(int index, List<Car> List)
         {
-            
+
             List.Remove(List[index]);
         }
-
-
     }
 }
