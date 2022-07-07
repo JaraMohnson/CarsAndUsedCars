@@ -23,7 +23,7 @@ namespace CarsAndUsedCars
         // tentative method.... 
         public override string ToString()
         {
-            return base.ToString();
+            return base.ToString() + String.Format("{0,-7} {1,-8} {2,-14}", "Used", Mileage, "Miles");
         }
 
 

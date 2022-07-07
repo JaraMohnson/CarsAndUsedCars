@@ -9,6 +9,6 @@ new UsedCar("Dodge", "Durango", 2018, 17800, 150000),
 new Car("Tesla", "Model X", 2022, 250000),
 new Car("Jeep", "Wrangler", 2023, 79000),
 new Car("Ford", "Bronco Sport", 2023, 68000),
-
 };
 
+Car.ListCars(CarList);
